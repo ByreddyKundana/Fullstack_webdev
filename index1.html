@@ -21,6 +21,19 @@
         #selectors{
             color:lime;
         }
+        .one{
+            color: mediumpurple;
+        }
+        .two{
+            color: seagreen;
+        }
+        .three{
+            color: red;
+        }
+        .big{
+            font-size: 40px;
+            font-weight: 800;
+        }
     </style>  <!-- color:saddlebrown!important; fixes the end style,useful when we want to over write bootstrap styles with our own css-->
 
 </head>
@@ -34,16 +47,21 @@
        no code re-usability.
     </p> 
     <hr><h1>internal css</h1>
-    <p>
+    <p class="one" >
         There are lot of <b>selectors</b>.
         <dl>
-            <dt><h2>element selectors</h2></dt>
-            <dd>element selector is a selector that selects the particular element to style.</dd>
+            <dt><h2 class="one big">element selectors</h2></dt>
+            <dd class="three">element selector is a selector that selects the particular element to style.</dd>
             <dt><h2 id="selectors">id selectors</h2></dt>
-            <dd>you can't reassign id(id name selectors couldn't repeat)</dd>
+            <dd class="three">you can't reassign id(id name selectors couldn't repeat)</dd>
         </dl>
+    </p>
         <hr>
         <h1>*************Inline css> ID selectors> Element selectors**************</h1>
+        
+     <p class="two">
+        <dl><h2 class="two big">class selectors</h2></dl>
+        <dd class="three" >you can repeat classs</dd>
     </p>
 </body>
 </html>
