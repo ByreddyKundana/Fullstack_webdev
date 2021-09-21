@@ -6,62 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullstack_Webdev_9</title>
     <style>
+        #red{
+            color:red;
+        }
+        .pink
+        {
+            color:pink;
+        }
         h1{
-            color:darkviolet;
-            font-size: 25px;
-        }
-        p{
-            color:saddlebrown;
-         
-            font-weight: 200;
-        }
-        h2{
             color:orange;
         }
-        #selectors{
-            color:lime;
-        }
-        .one{
-            color: mediumpurple;
-        }
-        .two{
-            color: seagreen;
-        }
-        .three{
-            color: red;
-        }
-        .big{
-            font-size: 40px;
-            font-weight: 800;
-        }
-    </style>  <!-- color:saddlebrown!important; fixes the end style,useful when we want to over write bootstrap styles with our own css-->
-
-</head>
+    </style>
 <body>
-   <h1 style="color: blue;font-size:xx-large;">CSS</h1>
-   <p style="color:navy;font-size: 30px;font-family: Gill Sans;">
-       This way of styling i.e adding  style attribute to the elements that we want to do styling 
-       is called <b style="color: crimson;">inline css</b>.Here property was color and value is blue
-       In css ";" marks the end of that particular property.suppose we had a a lot of elements,then 
-       adding style attribute to each of the element is not feasible and it is time consuming,there is
-       no code re-usability.
-    </p> 
-    <hr><h1>internal css</h1>
-    <p class="one" >
-        There are lot of <b>selectors</b>.
-        <dl>
-            <dt><h2 class="one big">element selectors</h2></dt>
-            <dd class="three">element selector is a selector that selects the particular element to style.</dd>
-            <dt><h2 id="selectors">id selectors</h2></dt>
-            <dd class="three">you can't reassign id(id name selectors couldn't repeat)</dd>
-        </dl>
-    </p>
-        <hr>
-        <h1>*************Inline css> ID selectors> Element selectors**************</h1>
-        
-     <p class="two">
-        <dl><h2 class="two big">class selectors</h2></dl>
-        <dd class="three" >you can repeat classs</dd>
-    </p>
+    <h1 style="color:green"class="pink" id="red">i am heading</h1>
+    <h1>************inline>id>class>element***********</h1>
 </body>
 </html>
