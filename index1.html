@@ -6,60 +6,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullstack_Webdev_10</title>
     <style>
-        .background{
-                background-color: aqua;
-                margin: 10px;
-
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+            text-decoration: none;
         }
+        
+        body{
+            background-color:black;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        } 
         .one{
             background-color: palevioletred;
-            width: 250px;
-            height: 250px;
-            margin-top: 50px;
-            margin-right: 100px;
-            margin-left: 150px;
-            padding: 50px 50px 50px 50px;
-            border: 2px black solid;
+            width: 350px;
+            height: 350px;
         }
         
     </style>
 <body>
-    <!--Display properties-->
-    <!--Box model-->
-    <!--Units-->
-    <!--Combined selectors-->
-   <div class="background">
-      <!--box model-->
-      Each and every HTML element is a box element.It's a 2-D box (rectangle).
-   </div>
+    
    <div class="one">
      <h2>Padding and Margins</h2>
-     The space between content and border is padding.The space between different elements is called as margin.
+     The space between content and border is<a href=""> padding</a>.The space between different elements is called as margin.
      Using padding properties, it changes the size (change in height and width) of container.If the padding 
      property values are greater than or equal to actual padding  values, then the element shifts accordingly
      ,otherwise it won't shift.
 
    </div>
-   <span class="background">
-       lorem<br>
-      <!--box sizing:- by default content box--> border box would ensure that your container overflows until you provide padding values in bouds.
-      <br>
+      <!--box sizing:- by default content box--> 
       <!--padding:50px,sets top,right,botton,left to 50 px-->
       <!--padding: 20px 45px, sets top and bottom to 20, right and left to 45-->
-   </span>
-   <table class="background">
-       <tr>
-           <td>one</td>
-           <td>one</td>
-       </tr>
-       <tr>
-           <td>one</td>
-           <td>one</td>
-       </tr>
-   </table>
-   <a href="" class="background">lorem</a>
-   <b class="background">bold</b> <br>
-   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZmFIqaMOvVHgnQ3Onbt-gFx8N4eDYHAcsw&usqp=CAU"/>
+      <!--*,universal selector-->
 
 
 </body>
