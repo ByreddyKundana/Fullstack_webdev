@@ -6,38 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fullstack_Webdev_10</title>
     <style>
-        div{
-            background-color: palegreen;
-            width: 400px;
-            height: 300px;
+        .background{
+                background-color: aqua;
+                margin: 10px;
+
         }
-        span{
-            background-color: orchid;
+        .one{
+            background-color: palevioletred;
+            width: 250px;
+            height: 250px;
+            margin-top: 50px;
+            margin-right: 100px;
+            margin-left: 150px;
+            padding: 50px 50px 50px 50px;
+            border: 2px black solid;
         }
+        
     </style>
 <body>
     <!--Display properties-->
     <!--Box model-->
     <!--Units-->
     <!--Combined selectors-->
-   <div>
-       <h2>pointers for block</h2>
-       <ol>
-           <li>Width of a block level element is 100% of the view port width.</li>
-           <li>Height of a block isn't set by default.</li>
-           <li>Height and width can be explicitly set using CSS.</li>
-       </ol>
+   <div class="background">
+      <!--box model-->
+      Each and every HTML element is a box element.It's a 2-D box (rectangle).
    </div>
-   <span>
-        <h2>pointers for inline</h2>
-        <ol>
-           <li>Width of an inline level element is dependent on the content.</li>
-           <li>Height of a block isn't set by default.</li>
-           <li>Height and width can not be explicitly set using CSS.</li>
-        </ol>
-        Width of an inline level element is dependent on the content.Height of a block isn't set by default.
-        Height and width can not be explicitly set using CSS.
+   <div class="one">
+     <h2>Padding and Margins</h2>
+     The space between content and border is padding.The space between different elements is called as margin.
+     Using padding properties, it changes the size (change in height and width) of container.If the padding 
+     property values are greater than or equal to actual padding  values, then the element shifts accordingly
+     ,otherwise it won't shift.
+
+   </div>
+   <span class="background">
+       lorem<br>
+      <!--box sizing:- by default content box--> border box would ensure that your container overflows until you provide padding values in bouds.
+      <br>
+      <!--padding:50px,sets top,right,botton,left to 50 px-->
+      <!--padding: 20px 45px, sets top and bottom to 20, right and left to 45-->
    </span>
-   <p></p>
+   <table class="background">
+       <tr>
+           <td>one</td>
+           <td>one</td>
+       </tr>
+       <tr>
+           <td>one</td>
+           <td>one</td>
+       </tr>
+   </table>
+   <a href="" class="background">lorem</a>
+   <b class="background">bold</b> <br>
+   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxZmFIqaMOvVHgnQ3Onbt-gFx8N4eDYHAcsw&usqp=CAU"/>
+
+
 </body>
 </html>
