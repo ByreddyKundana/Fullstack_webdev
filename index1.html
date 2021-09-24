@@ -4,44 +4,71 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fullstack_Webdev_11</title>
+    <title>positioning task</title>
     <style>
         *{
-            margin: 0;
-            padding: 0;
+            margin: 0px;
+            padding: 0px;
             box-sizing: border-box;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-        div{
-            background-color:darkcyan;
-            min-height: 200px;
-            color: white;
-            height: 200px;
-            margin:20px;
+        .card{
+           height: 61vh;
+           width: 25vw;
+           background-color:papayawhip;
+           border-radius: 15px;
+           position: relative;
+           margin-top: 17vh;
+           margin-bottom: 12vh;
+           margin-right: 45vw;
+           margin-left: 38vw;
         }
-        .two{
-            background-color: orange;
-            position: relative;
-           }
-           h1{
-               position:absolute;
-              background-color: mediumblue;
-              bottom:-100px;
-           }
-           img{
-               width: 80px;
-               position: fixed;
-               bottom: 20px;
-               right: 20px;
-               cursor:pointer;
+        img{
+            height: 35vh;
+            width :25vw;
+            border-radius: 15px;
+        }
+        p{
+            text-align: center;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        h1{
+            position:relative;
+            left: 9.5vw;
+        }
+        .button{
+            background-color:orange;
+            position: absolute;
+            bottom: -8.5px;
+            left:9.5vw;
+            padding:8px;
+            border-radius: 10px;
+            color:white;
+        }
+        .circle{
+           position: absolute; 
+           right: 12px;
+           background-color: orange;
+           color: white;
+           top: 10px;
+           border-radius: 30px;
+           padding:15px;
+        }
 
-           }
     </style>
-    <!--position:relative is relative positioning with respect to the static positioning-->
+</head>
 <body>
-    <img src="https://www.svgrepo.com/show/332117/message.svg" alt="" calss="bot"/>
-   <div class="two">
-       <h1>heading</h1>
-   </div>
+    <div class="card">
+        <img src="https://cdn.wallpapersafari.com/56/85/Y65Vrd.jpg" alt="Eiffel tower"/>
+        <h1>Paris</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Ad consequuntur mollitia pariatur illum accusamus laudantium corrupti, modi similique dolor praesentium, ullam debitis odit perferendis veritatis nesciunttotam sint. doloremque voluptas!</p>
+       <div class="button">
+        <b>Visit Paris</b>
+       </div> 
+       <div class="circle">
+       <h5>11<sup>th</sup></h5>
+       </div>
+    </div>     
 </body>
 </html>
