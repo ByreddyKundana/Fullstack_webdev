@@ -17,8 +17,7 @@
             position: relative;
             display: flex;
             flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            flex-wrap: wrap;
         }
         .child{
             width: 100px;
@@ -31,11 +30,15 @@
 </head>
 <body>
     <div class="parent">
-    <div class="child"></div>
-    <div style="background-color: red;" class="child"></div>
-    <div style="background-color: blue;" class="child"></div>
+        <div class="child"></div>
+        <div style="background-color: red;" class="child"></div>
+        <div style="background-color: blue;" class="child"></div>
+        
     </div>
     <!--justify-content works on the primary axis-->
+    <!--flex properties:align-items,justify-content,flex-direction,
+        flex-wrap-->
+    <!--stretch works when no height is explicitly mentioned for child-->
 </body>
 </html>
         
