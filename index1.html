@@ -12,18 +12,44 @@
             box-sizing: border-box;
             margin:4px;
         }
-        div.parent div:nth-child(2){
-            background-color: lime;
+        h2{
+            padding:5px;
+            color: white;
+            background-color: orange;
+        }
+        h2:hover{
+            background-color: palevioletred;
+            cursor: pointer;
+        }
+        div::selection{
+            background-color: rgb(240, 70, 240);
+        }
+        input:focus{
+            background-color: red;
+            color: white;
+            font-size: 2rem;
+        }
+        h2::after{
+            content:"I'm after";
+            font-size: 0.5rem;
+            color: red;
+            position: relative;
+        }
+        h2::before{
+            content:"I'm before";
+            font-size: 0.5rem;
+            color: rgb(0, 247, 255);
+            position: relative;
         }
         
     </style>
 </head>
 <body>
-    <div class="parent">
-        <div>I'm a first div</div>
-        <div>I'm a  second div</div>
-        <div>I'm a third div</div>
+    <h2>I'm a heading</h2>
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa nam expedita maxime natus minus ratione? Assumenda atque aspernatur, accusantium, unde, et impedit cum nostrum iure nobis omnis ratione tenetur ad.
     </div>
+    <input type=""/>
 </body>
 </html>
         
