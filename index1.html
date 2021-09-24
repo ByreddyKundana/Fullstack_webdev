@@ -10,38 +10,27 @@
             padding: 0px;
             margin: 0px;
             box-sizing: border-box;
-            text-decoration: none;
         }
-        
-        body{
-            background-color:black;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-        } 
-        .one{
+        .parent{
             background-color: palevioletred;
-            width: 350px;
-            height: 350px;
+            height: 60px;
+            padding: 20px;
+            width: 50vw;
+        }
+        .child{
+            background-color:cornflowerblue;
+            height: 20px;
+            width: 80%;
         }
         
     </style>
+            <!--relative units and absolute units-->
 <body>
-    
-   <div class="one">
-     <h2>Padding and Margins</h2>
-     The space between content and border is<a href=""> padding</a>.The space between different elements is called as margin.
-     Using padding properties, it changes the size (change in height and width) of container.If the padding 
-     property values are greater than or equal to actual padding  values, then the element shifts accordingly
-     ,otherwise it won't shift.
-
-   </div>
-      <!--box sizing:- by default content box--> 
-      <!--padding:50px,sets top,right,botton,left to 50 px-->
-      <!--padding: 20px 45px, sets top and bottom to 20, right and left to 45-->
-      <!--*,universal selector-->
-
-
+     <div class="parent">
+         <div class="child"></div>
+    </div>
+     <!--A  child div will occupy available 100% of the parent div width until and than you specify the particular width to the child div.-->
+     <!--widh=80% makes the width of the child 80% relative to the parent-->
+     
 </body>
 </html>
