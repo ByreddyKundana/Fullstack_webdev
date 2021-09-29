@@ -12,6 +12,10 @@ header{
     height: 300px;
     background-size: cover;
     background-position: center;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 /* footer styles */
 img.social{
@@ -31,3 +35,90 @@ footer{
     width: 100%;
 
 }
+.centre{
+    height:200px;
+    width:400px;
+    background-color: none;
+    position: absolute;
+    bottom: -60px;
+}
+.list{
+    height: 50px;
+    width: 400px;
+    background-color: none;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.todo{
+    color: white;
+}
+.mode{
+    background-color: white;
+    height: 25px;
+    width:60px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+.circle{
+    background-color: #ffc400;
+    height: 20px;
+    width:20px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+.content{
+    height:35px;
+    width:400px;
+    background-color:white;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.addtask{
+    margin-left: 10px;
+}
+.plus{
+    margin-right: 10px ;
+}
+.bottom{
+    background-color:white;
+    height: 115px;
+    border-radius: 8px;
+}
+.headings{
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px 5px;
+    margin-top: 10px;
+}
+.final{
+    background-color:#ee864a;
+    height: 76px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+}
+.task1{
+    background-color: white;
+    width: 392px;
+    height: 25px;
+    margin:3px 0px;
+    margin-left: 4px;
+    border-radius: 5px ;
+}
+.task2{
+    background-color: white;
+    width: 392px;
+    height: 25px;
+    margin: 3px 0px ;
+    margin-left: 4px;
+    border-radius: 5px ;
+}
+
