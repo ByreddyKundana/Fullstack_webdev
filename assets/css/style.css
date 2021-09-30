@@ -68,6 +68,14 @@ footer{
     border-radius: 50%;
     margin-left: 5px;
 }
+div.circle:hover{
+    background-color: black;
+    transform:translateX(30px);
+    transition: 0.3s;
+    transition-timing-function: linear;
+    cursor:pointer;
+}
+
 .content{
     height:35px;
     width:400px;
@@ -79,9 +87,11 @@ footer{
 }
 .addtask{
     margin-left: 10px;
+    color: grey;
 }
 .plus{
     margin-right: 10px ;
+    color: grey;
 }
 .bottom{
     background-color:white;
@@ -94,7 +104,9 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding:5px 5px;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-size: 0.9rem;
+    color:black;
 }
 .final{
     background-color:#ee864a;
@@ -112,6 +124,11 @@ footer{
     margin:3px 0px;
     margin-left: 4px;
     border-radius: 5px ;
+    font-size: 1rem;
+    padding-top: 3.5px;
+    color:darkcyan;
+    display: flex;
+    justify-content: space-between;
 }
 .task2{
     background-color: white;
@@ -120,5 +137,19 @@ footer{
     margin: 3px 0px ;
     margin-left: 4px;
     border-radius: 5px ;
+    font-size: 1rem;
+    padding-top: 3.5px;
+    color:darkcyan;
+    display: flex;
+    justify-content: space-between;
+}
+.wrong{
+    margin-right: 3px;
+}
+div.wrong:hover{
+    cursor: pointer;
+    transform:translate(1px);
+    transition: 0.2s;
+    transition-timing-function: step-end;
 }
 
