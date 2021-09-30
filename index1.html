@@ -8,29 +8,41 @@
 </head>
 <style>
     div.parent{
+        display: flex;
+        align-items: stretch;
         background-color: black;
-        color: white;
-        font-size: 2rem;
+        height: 100vh;
     }
-    @media (max-width: 700px) {
-        div.parent{
-            background:orchid;
-            font-size: 0.8rem;
+    div.child{
+        background-color: orange;
+        flex-basis: 80%;
+    }
+    div.sidebar{
+        background-color: orangered;
+        flex-basis: 20%;
+    }
+    @media(max-width:550px){
+        div.sidebar{
+        animation: 5s expand linear infinite;
+    }
+    div.child{
+        flex-basis: 100%;
+    } 
+    @keyframes expand{
+        0%{
+            flex-basis: 0%;
+        }
+        30%{
+            flex-basis: 50%;
         }
     }
-    @media (max-width: 500px) {
-        div.parent{
-            background: orange;
-            font-size: 0.8rem;
-        }
     }
     
 </style>
 <body>
     <div class="parent">
-        <h1>I'm a heading</h1>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti, sunt. Sint, officia quam voluptatibus fugit, quidem quibusdam explicabo hic quisquam ullam tempora cupiditate alias doloribus dolorum. Reprehenderit perspiciatis aperiam quae.
-
+        <div class="sidebar"></div>
+        <div class="child"></div>
     </div>
 </body>
 </html>
