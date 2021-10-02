@@ -1,22 +1,26 @@
-function greet(Name,age=19) {
-    console.log('hey' +Name+ "your age is" +age)
-}
-greet('Priya') 
+ //var add=(a=0,b=0)=>a+b
 
+ //console.log(add(10,20))
 
-//function add(a=0,b=0){  
- //   var sum=a+b
- //   return sum
+//const greet=(Name)=>'hi'+ Name
+//console.log(greet('priya'))
+
+var arr=['go to the gym','eat food',"clean house"]
+
+//for(var i=0;i<arr.length;i++){
+//    console.log(arr[i])
 //}
-//console.log(sum)
-//var result= add(10,20)
-//  console.log(result)
-   //nan: not a number
 
-var add=(a=0,b=0)=>{
-    var sum=a+b
-    return sum
- }
+var callbackFunction=()=>{
+    console.log('i ran')
+}
+arr.forEach(callbackFunction)
 
-console.log(add(10,20))
+var callbackFunction=(element,index)=>{
+    console.log(element,index)
+}
+arr.forEach(callbackFunction)
 
+arr.forEach((element,index)=>{
+    console.log(element,index)
+})
