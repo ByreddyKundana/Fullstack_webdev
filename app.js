@@ -1,22 +1,59 @@
-//non primitive data types
-//array is an object
+//operatos
 
-var arr=[1,2,3,4]
-console.log(arr) 
-console.log(arr.length)
-arr.push(5)
-console.log(arr)
+//arithmetic operators
 
-//array in js is not generic
+var a=2
+var b=10
+console.log('a+b=',a+b)
+console.log('b-a=',b-a)
+console.log('b/a=',b/a)
+console.log('b*a=',b*a)
+console.log('b**a=',b**a)
+console.log('b%a=',b%a)
 
-var arr=[1,2,3,4,"age"]
-console.log(arr)
-console.log(typeof arr)
-console.log(arr.length)
+//assignment operators
 
-var age=19
-age=43
-console.log(age)
-const set=19
-set=43
-console.log(set)
+console.log('b',b)
+b+=10
+console.log('b+=10',b)
+b++
+console.log('b++',b)
+b-=10
+console.log('b-=10',b)
+b--
+console.log('b--',b)
+
+
+var c=10
+console.log(c)
+console.warn(c++)
+console.log(c)
+console.warn(++c)
+console.log(c)
+
+//comparison operators return a boolean
+
+var d=10
+var e=2
+var f='10'
+console.log(d>e)
+console.log(d<e)
+console.log(d==e)
+console.log(d>=e)
+console.log(d<=e)
+
+console.warn(d==f)//loose check 
+console.warn(d===f)
+console.warn(d+f)
+
+//logical operators
+
+console.log('true&&true',true&&true)
+console.log('true&&false',true&&false)
+console.log('false&&true',false&&true)
+console.log('false&&false',false&&false)
+
+console.log('true||true',true||true)
+console.log('true||false',true||false)
+console.log('false||true',false||true)
+console.log('false||false',false||false)
