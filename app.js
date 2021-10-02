@@ -1,26 +1,19 @@
- //var add=(a=0,b=0)=>a+b
+var button=document.querySelector('button')
+var input=document.querySelector('input')
+var list=document.querySelector('ul')
 
- //console.log(add(10,20))
-
-//const greet=(Name)=>'hi'+ Name
-//console.log(greet('priya'))
-
-var arr=['go to the gym','eat food',"clean house"]
-
-//for(var i=0;i<arr.length;i++){
-//    console.log(arr[i])
+//const callbackfunc=(event)=>{
+ //   console.log(event.target)
+ //   console.log(input.value)
 //}
 
-var callbackFunction=()=>{
-    console.log('i ran')
-}
-arr.forEach(callbackFunction)
+//button.addEventListener('click',callbackfunc)
 
-var callbackFunction=(element,index)=>{
-    console.log(element,index)
+const callbackfunc=(event)=>{
+    const inputvalue=input.value
+    const element=document.createElement('li')
+    const textnode=document.createTextNode(inputvalue)
+    element.appendChild(textnode)
+    list.appendChild(element)
 }
-arr.forEach(callbackFunction)
-
-arr.forEach((element,index)=>{
-    console.log(element,index)
-})
+button.addEventListener('click',callbackfunc)
