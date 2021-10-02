@@ -1,12 +1,14 @@
-var heading=document.getElementById('heading')
-var body=document.querySelector('body')
-console.log(heading)
+var list=document.querySelector('ul')
 
-heading.innerHTML="i was added by JS"
-heading.style="color:red;font-size:2rem"
-console.log(heading.classList)
-heading.classList.add('five')
-console.log(heading.classList)
-heading.classList.remove('one')
-console.log(heading.classList)
-body.classList.add('dark')
+console.log(list)
+
+var arr=['Go to the gym','cook oatmeal','eat']
+ 
+arr.push('complete assignment')
+
+for(var i=0;i<arr.length;i++){
+    var element=document.createElement('li')
+    var textnode=document.createTextNode(arr[i])
+    element.appendChild(textnode)
+    list.appendChild(element)
+}
