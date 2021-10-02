@@ -1,14 +1,22 @@
-var list=document.querySelector('ul')
-
-console.log(list)
-
-var arr=['Go to the gym','cook oatmeal','eat']
- 
-arr.push('complete assignment')
-
-for(var i=0;i<arr.length;i++){
-    var element=document.createElement('li')
-    var textnode=document.createTextNode(arr[i])
-    element.appendChild(textnode)
-    list.appendChild(element)
+function greet(Name,age=19) {
+    console.log('hey' +Name+ "your age is" +age)
 }
+greet('Priya') 
+
+
+//function add(a=0,b=0){  
+ //   var sum=a+b
+ //   return sum
+//}
+//console.log(sum)
+//var result= add(10,20)
+//  console.log(result)
+   //nan: not a number
+
+var add=(a=0,b=0)=>{
+    var sum=a+b
+    return sum
+ }
+
+console.log(add(10,20))
+
