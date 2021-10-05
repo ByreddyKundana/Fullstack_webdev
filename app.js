@@ -1,39 +1,26 @@
-
-// if(true){
-//     let Name='Ferrari'
-// }
-// console.log(Name)
-// for(let i=0;i<10;i++){
-   
-// }
-// console.log(i)
-
-// if(true)
-// {
-//      let Name='ferrari'
-//     if(true){
-//         console.log(Name)
-
-//     }
-
-// }
-// if(true)
-// {
-//     console.log(Name)
-//     if(true){
-        
-//         var Name='ferrari'
-//     }
-
-// }
-
-
-const print=()=>{
-    var Name='mercedes'
-    if(true){
-        console.log(Name)
+//console.log(this.alert('HI'))
+ //let manufacturer="ferrari"
+let car={
+    name: "c calss",
+    manufacturer:"mercedes",
+    print: ()=>{
+        // console.log("a")
+        console.log(this)
+        //let manufacturer="BMW"
+        //console.log(manufacturer) 
+        //console.log(car.manufacturer,car.name)
+        //console.log(this.name,this.manufacturer)
+        console.log(`${this.name} was created by ${this.manufacturer}`)
     }
-    return Name
 }
+// car.print('ferrari')
+// console.log(car.name)
+// console.log(car.manufacturer)
+// console.log(car)
+// console.log(typeof car)
+//car.print()
 
-print()
+
+// console.log(Object.keys(car))
+// console.log(Object.values(car))
+console.log(car.hasOwnProperty('name'))
