@@ -9,11 +9,25 @@ var list=document.querySelector('ul')
 
 //button.addEventListener('click',callbackfunc)
 
+var chores=[]
+
+var deleteItem=(value)=>{
+const index =chores.indexOf(value)
+chores.splice(index,1)
+   console.log(chores)
+}
+
 const callbackfunc=(event)=>{
     const inputvalue=input.value
-    const element=document.createElement('li')
-    const textnode=document.createTextNode(inputvalue)
-    element.appendChild(textnode)
-    list.appendChild(element)
+    if(chores.includes(inputvalue)){console.log('already exists')}
+    else{
+     chores.push(inputvalue)
+     const element=document.createElement('li')
+     const textnode=document.createTextNode(inputvalue)
+     element.appendChild(textnode)
+     list.appendChild(element)
+     element.addEventListener('click',(e)=>{
+     deleteItem(e.target.innerHTML)})
+    }
 }
 button.addEventListener('click',callbackfunc)
