@@ -1,33 +1,39 @@
-var button=document.querySelector('button')
-var input=document.querySelector('input')
-var list=document.querySelector('ul')
 
-//const callbackfunc=(event)=>{
- //   console.log(event.target)
- //   console.log(input.value)
-//}
+// if(true){
+//     let Name='Ferrari'
+// }
+// console.log(Name)
+// for(let i=0;i<10;i++){
+   
+// }
+// console.log(i)
 
-//button.addEventListener('click',callbackfunc)
+// if(true)
+// {
+//      let Name='ferrari'
+//     if(true){
+//         console.log(Name)
 
-var chores=[]
+//     }
 
-var deleteItem=(value)=>{
-const index =chores.indexOf(value)
-chores.splice(index,1)
-   console.log(chores)
-}
+// }
+// if(true)
+// {
+//     console.log(Name)
+//     if(true){
+        
+//         var Name='ferrari'
+//     }
 
-const callbackfunc=(event)=>{
-    const inputvalue=input.value
-    if(chores.includes(inputvalue)){console.log('already exists')}
-    else{
-     chores.push(inputvalue)
-     const element=document.createElement('li')
-     const textnode=document.createTextNode(inputvalue)
-     element.appendChild(textnode)
-     list.appendChild(element)
-     element.addEventListener('click',(e)=>{
-     deleteItem(e.target.innerHTML)})
+// }
+
+
+const print=()=>{
+    var Name='mercedes'
+    if(true){
+        console.log(Name)
     }
+    return Name
 }
-button.addEventListener('click',callbackfunc)
+
+print()
